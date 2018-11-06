@@ -13,8 +13,9 @@
     font-size: 28px;
     margin-top: 20px;
     margin-bottom: 90px;
-    color: #FFF;
+    color: #525172;
 }
+
 
 
 /*------------------------------------------Navbar*/
@@ -24,7 +25,7 @@
     top: 0;
     left: 0;
     right: 0;
-    background-color: #4a4a4f;
+    background-color: #525172;
     border-color: transparent;
 }
 
@@ -68,17 +69,23 @@
     }
 }
 
-.bg-1 {
-    background: #2d2d30;
-    color: #bdbdbd;
+.big-1 {
+    background-image: url('/assets/images/tourpic1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
 }
 
 .bg-1 {
-    color: #fff;
+    color: #0DCDF3;
 }
 
 .bg-1 p {
     font-style: italic;
+}
+
+.list-group-item {
+    background-color: transparent;
 }
 
 .list-group-item:first-child {
@@ -91,22 +98,44 @@
     border-bottom-left-radius: 0;
 }
 
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.thumbnail {
+    background-color: transparent;
+    border-color: transparent;
+    
+}
+
+
 /*------------------------------------------Band*/
 
+/*------------------------------------------Tour*/    
+
+.btn {
+    background-color: #e84610;
+    color: #fafafa;
     
-article {
-    float: left;
-    padding: 20px;
-    width: 70%;
-    background-color: #f1f1f1;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    padding-top: 20px;
+
 }
 
 /*------------------------------------------Media*/
 
 .column {
     float: left;
-    width: 33.33%;
+    width: 49.33%;
     padding: 5px;
+    padding-bottom: 115px;
 }
 
 /* Clearfix (clear floats) */
@@ -116,32 +145,48 @@ article {
     display: table;
 }
 
+
 .container {
-    padding: 80px 120px;
+    padding: 0px 0px;
+    padding-right: 350px
 }
+
 
 h1, h2, h4 {
     margin: 0;
+    padding-top: 80px
 }
+
+
+
+  .modal-header, .close {
+      background-color: #333;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+
 
 /*------------------------------------------Footer*/
 
 footer {
-    background-color: #525252;
+    background-color: #3333336b;
     color: #fafafa;
     min-height: 120px;
     margin: 0;
 }
 
-footer .cv-pdf {
-    color: #fafafa;
+footer {
     text-align: center;
     font-size: 18px;
     padding-left: 5px;
 }
 
-footer .cv-pdf i:hover {
-    color: #e84610;
+footer i:hover {
+    color: #525172;
     transition: all .35s ease-in-out;
     -o-transition: all .35s ease-in-out;
     -ms-transition: all .35s ease-in-out;
@@ -153,16 +198,16 @@ footer .cv-pdf i:hover {
     padding-bottom: 15px;
 }
 
-.social-links li a i {
+.social-links li a i{
     width: 32px;
     height: 32px;
     padding: 12px 0;
     border-radius: 50%;
-    font-size: 13px;
+    font-size: 18px;
     line-height: 7px;
     text-align: center;
-    color: #fafafa;
-    background: #8f8f8f;
+    color: #f5f5f5;
+    background: #2980B9;
     transition: all .35s ease-in-out;
     -o-transition: all .35s ease-in-out;
     -ms-transition: all .35s ease-in-out;
@@ -171,7 +216,7 @@ footer .cv-pdf i:hover {
 }
 
 .social-links li a i:hover {
-    background: #e84610;
+    background: #d0471a;
 }
 
 #footer-details {
@@ -179,8 +224,16 @@ footer .cv-pdf i:hover {
 }
 
 
-
 /*----------------------------------------------------Contact*/
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: -16.571429;
+    color: #060c06;
+    background-color: transparent;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
 
 .contact-heading {
     font-family: "Exo", sans-serif;
@@ -190,14 +243,24 @@ footer .cv-pdf i:hover {
 }
 
 .center-form {
-    padding-top: 10px; 
-    margin: 0 auto;
+    padding-top: 101px; 
+    min-height: 457px;
+    margin: 80px auto;
     max-width: 70%;
+    background-color: transparent;
+    border: 0px #333;
+    padding: 18px 12px;
 }
 
 .center-form .form-control {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
+
+.form-control {
+  background-color: #f7d733;
+  color: #333
+}
+
 
 button[type="submit"] {
     margin-top: 15px;
@@ -205,6 +268,14 @@ button[type="submit"] {
     background-color: #e84610;
     color: #fafafa;
 }
+
+button[type="click here"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #e84610;
+    color: #fafafa;
+}
+
 
 /*----------------------------------------------------Media Queries*/
 
@@ -218,8 +289,22 @@ button[type="submit"] {
     .center-form {
         padding-top: 30px; 
         min-height: 240px;
-        margin: 0 auto;
+        margin: 80px auto;
         max-width: 50%;
     }
 }
 
+
+  .modal-header, .close {
+      background-color: #333;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+  
+.colm-sm-4 {
+    padding-bottom: 180px;
+}  
