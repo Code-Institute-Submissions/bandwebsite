@@ -5,57 +5,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-          <style type="text/css">
-      html{
-        background: url(assets/images/flower-power.jpg) no-repeat 
-        center center fixed;
-        -moz-background-size: cover; 
-        -webkit-background-size: cover;
-        -o-background-size: cover; 
-        background-size: cover;
-      }
-    
-    #foo img {
+    <style type="text/css">
+        html {
+            background: url(assets/images/flower-power.jpg) no-repeat center center fixed;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        #foo img {
             width: 32vw;
             height: 27vw;
-    }
+        }
 
-    .page-title {
-        color: #fff;
-        font-weight: 700;
-    }
-    
-    .youtube-responsive-container {
-        position: relative;
-        padding-bottom: 56.25%;
-        padding-top: 30px;
-        height: 0;
-        overflow: hidden;
-    }
+        .page-title {
+            color: #fff;
+            font-weight: 700;
+        }
 
-    .youtube-responsive-container iframe,
-    .youtube-responsive-container object,
-    .youtube-responsive-container embed {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-    
-      
+        .youtube-responsive-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .youtube-responsive-container iframe,
+        .youtube-responsive-container object,
+        .youtube-responsive-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: grey;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+        }
+
+        p {
+            color: white;
+        }
     </style>
 
     <title>The Monkees</title>
 </head>
 
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            }
+            else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
     <header>
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
@@ -80,80 +121,89 @@
                 </div>
             </div>
         </nav>
-
     </header>
-<section>
-    <div id="band" class="container-fluid text-center">
-        <h1 class="page-title">MEDIA</h1>
-        <br>
-
-        <div class="row">
-            <div class="youtube-responsive-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/xvqeSJlgaNk?start=20" frameborder="0" allowfullscreen></iframe>
+    <section>
+        <div id="band" class="container-fluid text-center">
+            <h1 class="page-title">MEDIA</h1>
+            <br>
+            <div class="row">
+                <div class="youtube-responsive-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xvqeSJlgaNk?start=20" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div><br><br>
+            <p><strong>Listen to The Monkees' Greatest Hits!</strong></p>
+            <div class="row">
+                <div class="col-sm-12" id="foo">
+                    <img src="/assets/images/tmcover.jpg" class="img-rounded" alt="Band Photo1" style="padding-bottom: 5px;">
+                </div>
             </div>
-        </div>    
-        <div class="row">
-            <h1 class="page-title">LISTEN</h1>
-        <audio controls style="padding-bottom: 1%;">
+            <div class="row">
+                <audio controls style="padding-bottom: 1%;">
           <source src="/assets/audio/Clarksville.mp3" type="audio/mpeg">
-          <source src="/assets/audio/DayDreambeliever.mp3" type="audio/mpeg">
-          <source src="/assets/audio/ImABeliever.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+                <p><strong>"Clarksville"</strong></p><br>
+                <audio controls style="padding-bottom: 1%;">
           <source src="/assets/audio/SteppingStone.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
-        </div>
-        <div class="row">    
-            <div class="col-sm-12" id="foo">
-                <img src="/assets/images/monkeeimage.jpg" class="img-rounded" alt="Band Photo1" style="margin-top: 5%;">
+                <p><strong>"Stepping Stone"</strong></p><br>
+                <audio controls style="padding-bottom: 1%;">
+          <source src="/assets/audio/ImABeliever.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+                <p><strong>"I'm A Believer"</strong></p><br>
+                <audio controls style="padding-bottom: 1%;">
+          <source src="/assets/audio/DayDreambeliever.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+                <p><strong>"Day Dream Believer"</strong></p><br>
+            </div>
+            <div class="row">
+                <div class="col-sm-6" id="foo">
+                    <img src="/assets/images/monkees.jpg" class="img-rounded" alt="Band Photo2" style="margin-top: 2%;">
+                </div>
+                <div class="col-sm-6" id="foo">
+                    <img src="/assets/images/tmcover3.jpg" class="img-rounded" alt="Band Photo3" style="margin-top: 2%;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6" id="foo">
+                    <img src="/assets/images/monkeeimage.jpg" class="img-rounded" alt="Band Photo4" style="margin-top: 2%;padding-bottom: 10px">
+                </div>
+                <div class="col-sm-6" id="foo">
+                    <img src="/assets/images/tmband.jpg" class="img-rounded" alt="Band Photo5" style="margin-top: 2%; padding-bottom: 10px">
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-6" id="foo">
-                <img src="/assets/images/monkees.jpg" class="img-rounded" alt="Band Photo2" style="margin-top: 5%;">
-            </div>
-            <div class="col-sm-6" id="foo">
-                <img src="/assets/images/tmcover3.jpg" class="img-rounded" alt="Band Photo3" style="margin-top: 5%;">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6" id="foo">
-                <img src="/assets/images/tmcover.jpg" class="img-rounded" alt="Band Photo4" style="margin-top: 5%;">
-            </div>
-            <div class="col-sm-6" id="foo">
-                <img src="/assets/images/tmband.jpg" class="img-rounded" alt="Band Photo5" style="margin-top: 5%;">
-            </div>
-        </div>
-    </div>
-
-</section>
-      <footer class="container-fluid">
-         <div id="footer-details" class="row">
+    </section>
+    <footer class="container-fluid" style="margin-right: -15px" ;>
+        <div id="footer-details" class="row">
             <div class="col-sm-4">
-               <h5 class="uppercase general-sub">Mailing List</h5>
-                  <form class="form-inline">
-                     <div class="form-group">
+                <h5 class="uppercase general-sub">Mailing List</h5>
+                <form class="form-inline">
+                    <div class="form-group">
                         <label for="email">Email:</label>
                         <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
-                     </div>
-                     <button type="submit" class="btn btn-default">Submit</button>
-                  </form>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
             </div>
             <div class="col-sm-4">
-               <h5 class="uppercase general-sub">Bookings for Weddings & Parties</h5>
-               <a href="contact.html" class="contact"><i class="" aria-hidden="true"></i>
-               <button type="click here" class="btn btn-default">Click Here!</button></a>  
+                <h5 class="uppercase general-sub">Bookings for Weddings & Parties</h5>
+                <a href="contact.html" class="contact"><i class="" aria-hidden="true"></i>
+               <button type="click here" class="btn btn-default">Click Here!</button></a>
             </div>
             <div class="col-sm-4">
-               <h5 class="uppercase general-sub">Social Media</h5>
-               <ul class="list-inline social-links">
-                  <li><a href="https://www.facebook.com/TheMonkees/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="https://twitter.com/themonkees?lang=en" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="https://www.youtube.com/channel/UCv1oY0OLtsEySHeP1TkYNqA" target="_blank"><i class="fa fa-youtube"></i></a></li>
-               </ul>
+                <h5 class="uppercase general-sub">Social Media</h5>
+                <ul class="list-inline social-links">
+                    <li><a href="https://www.facebook.com/TheMonkees/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/themonkees?lang=en" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCv1oY0OLtsEySHeP1TkYNqA" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                </ul>
             </div>
-         </div>
-      </footer>
+        </div>
+    </footer>
 
 </body>
-
 </html>

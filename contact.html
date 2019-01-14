@@ -11,23 +11,61 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-          <style type="text/css">
-      html{
-        background: url(assets/images/flower-power2.jpg) no-repeat 
-        center center fixed;
-        -moz-background-size: cover; 
-        -webkit-background-size: cover;
-        -o-background-size: cover; 
-        background-size: cover;
-      }
-      
+    <style type="text/css">
+        html {
+            background: url(assets/images/flower-power2.jpg) no-repeat center center fixed;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
 
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: grey;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+        }
     </style>
 
     <title>The Monkees</title>
 </head>
 
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            }
+            else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
     <header>
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
@@ -53,50 +91,47 @@
                 </div>
             </div>
         </nav>
-
     </header>
-		<section class="container-fluid">
-			<div class="row bg-color-contact">
-				<h1 class="contact-heading uppercase text-center">Want To Book Us For An Event?</h1><br>
-				<h5 class="uppercase text-center">Please Fill Out the Form Below</h5>
-			</div>
-			<div class="center-form">
-				<form>
-					<input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
-					<input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required />
-					<textarea rows="5" name="eventsummary" class="form-control" id="eventsummary" placeholder="Event Description" required></textarea>
-					<button type="submit" class="btn btn-secondary center-block">Send Request</button>
-				</form>
-			</div>
-		</section>
-      <footer class="container-fluid">
-         <div id="footer-details" class="row">
+    <section class="container-fluid">
+        <div class="row bg-color-contact">
+            <h1 class="contact-heading uppercase text-center">Want To Book Us For An Event?</h1><br>
+            <h5 class="uppercase text-center">Please Fill Out the Form Below</h5>
+        </div>
+        <div class="center-form">
+            <form>
+                <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
+                <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required />
+                <textarea rows="5" name="eventsummary" class="form-control" id="eventsummary" placeholder="Event Description" required></textarea>
+                <button type="submit" class="btn btn-secondary center-block">Send Request</button>
+            </form>
+        </div>
+    </section>
+    <footer class="container-fluid" style="margin-right: -15px" ;>
+        <div id="footer-details" class="row" style="margin-left: 5px" ;>
             <div class="col-sm-4">
-               <h5 class="uppercase general-sub">Mailing List</h5>
-                  <form class="form-inline">
-                     <div class="form-group">
+                <h5 class="uppercase general-sub">Mailing List</h5>
+                <form class="form-inline">
+                    <div class="form-group">
                         <label for="email">Email:</label>
                         <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
-                     </div>
-                     <button type="submit" class="btn btn-default">Submit</button>
-                  </form>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
             </div>
             <div class="col-sm-4">
-               <h5 class="uppercase general-sub">Bookings for Weddings & Parties</h5>
-               <a href="contact.html" class="contact"><i class="" aria-hidden="true"></i>
-               <button type="click here" class="btn btn-default">Click Here!</button></a>  
+                <h5 class="uppercase general-sub">Bookings for Weddings & Parties</h5>
+                <a href="contact.html" class="contact"><i class="" aria-hidden="true"></i>
+               <button type="click here" class="btn btn-default">Click Here!</button></a>
             </div>
             <div class="col-sm-4">
-               <h5 class="uppercase general-sub">Social Media</h5>
-               <ul class="list-inline social-links">
-                  <li><a href="https://www.facebook.com/TheMonkees/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="https://twitter.com/themonkees?lang=en" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="https://www.youtube.com/channel/UCv1oY0OLtsEySHeP1TkYNqA" target="_blank"><i class="fa fa-youtube"></i></a></li>
-               </ul>
+                <h5 class="uppercase general-sub">Social Media</h5>
+                <ul class="list-inline social-links">
+                    <li><a href="https://www.facebook.com/TheMonkees/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/themonkees?lang=en" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCv1oY0OLtsEySHeP1TkYNqA" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                </ul>
             </div>
-         </div>
-      </footer>
-
+        </div>
+    </footer>
 </body>
-
 </html>

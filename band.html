@@ -1,152 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" type="text/css" />
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-      <style type="text/css">
-      
-         html {
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" type="text/css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+   <style type="text/css">
+      html {
          background: url(assets/images/closing-title2.jpg) no-repeat center center fixed;
          -moz-background-size: cover;
          -webkit-background-size: cover;
          -o-background-size: cover;
          background-size: cover;
+      }
+
+      .band-info-item {
+         text-align: center;
+         padding-left: 220px;
+         margin-bottom: 20px;
+         display: block;
+         clear: both;
+         width: 90%;
+         padding-top: 2px;
+         font-weight: 600;
+
+         font-size: 20px;
+
+      }
+
+      #myBtn {
+         display: none;
+         position: fixed;
+         bottom: 20px;
+         right: 30px;
+         z-index: 99;
+         font-size: 18px;
+         border: none;
+         outline: none;
+         background-color: grey;
+         color: white;
+         cursor: pointer;
+         padding: 15px;
+         border-radius: 4px;
+      }
+
+      #myBtn:hover {
+         background-color: #555;
+      }
+   </style>
+   <title>The Monkees</title>
+</head>
+
+<body>
+   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+   <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() { scrollFunction() };
+
+      function scrollFunction() {
+         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
          }
-         
-         .band-info-item {
-               text-align: center;
-               padding-left: 220px;
-               margin-bottom: 20px;
-               display: block;
-               clear: both;
-               width: 90%;
-               padding-top: 2px;
-               font-weight: 600;
-               
-               font-size: 20px;
-               
+         else {
+            document.getElementById("myBtn").style.display = "none";
          }
-         
-      </style>
-      <title>The Monkees</title>
-   </head>
-   <body>
-      <header>
-         <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-               <div class="navbar-header">
-                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+         document.body.scrollTop = 0;
+         document.documentElement.scrollTop = 0;
+      }
+   </script>
+   <header>
+      <nav class="navbar navbar-default navbar-fixed-top">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>                        
                      </button>
-
-                  <a class="navbar-brand" href="index.html">
+               <a class="navbar-brand" href="index.html">
                   <img src="/assets/images/logo.png" alt="logo" class="img-responsive" style="max-height: 50px; margin-top: -5%; margin-left: 5%;">
                   </a>
-               </div>
-               <div class="collapse navbar-collapse" id="myNavbar">
-                  <ul class="nav navbar-nav navbar-right">
-                     <li><a href="index.html">HOME</a></li>
-                     <li><a href="band.html">BAND</a></li>
-                     <li><a href="tour.html">TOUR</a></li>
-                     <li><a href="media.html">MEDIA</a></li>
-                     <li><a href="contact.html">CONTACT</a></li>
-                  </ul>
-               </div>
             </div>
-         </nav>
-      </header>
-      <section>
-         <div id="band" class="container-fluid text-center">
-            <div class="row row-table">
-                <div class="col-xs-12 col-sm-12 col-md-4 bg-color-band-info section-column">
-                        <h1 class="section-heading uppercase">The Band</h1>
-                        <br>
-                     <p="band-info-item">
-                        The Monkees are a four-person band who appear in an American television series of the same name. The Monkees formed in 1965 in Los Angeles, California and even today, still go down as the most successful TV rock show idea ever. That was how they came
-                        about, as an idea for a TV show moulded after the Beatles movie, A Hard Days' Night. A TV show about four poor hippie band members with lots of slapstick comedy, and of course, music too.The group turned into a real band and had a whole bunch
-                        of big hits, world wide!.
-                        These hits are heard on radio stations — including 'I'm a Believer', '(I'm Not Your) Steppin' Stone', 'Daydream Believer', 'Last Train to Clarksville' — and even a number of social criticism songs, the best known of which is probably 'Pleasant Valley Sunday'.
-                        The band have produced six albums (four of which went to Number 1 on the Billboard chart), which was supplemented by a series of successful world stadium tours!
-                     </p>
-               </div>   
-            </div>
-            <div class="row">
-               <div class="col-xs-12 col-sm-12 col-lg-6">
-                  <p class="text-center"><strong>Davy</strong></p>
-                  <a href="#demo" data-toggle="collapse">
-                  <img src="/assets/images/dj.jpg" class="img-rounded" alt="Davy Jones" width="300" height="255" style="padding-bottom: 5px">
-                  </a>
-                  <div id="demo" class="collapse">
-                     <p>Lead Vocals</p>
-                  </div>
-               </div>
-               <div class="col-xs-12 col-sm-12 col-lg-6">
-                  <p class="text-center"><strong>Mike</strong></p>
-                  <a href="#demo2" data-toggle="collapse">
-                  <img src="/assets/images/md.jpg" class="img-rounded" alt="Mike Dolenz" width="300" height="255" style="padding-bottom: 5px">
-                  </a>
-                  <div id="demo2" class="collapse">
-                     <p>Drummer and Vocals</p>
-                  </div>
-               </div>
-            </div>
-            <br>
-            <div class="row">
-               <div class="col-xs-12 col-sm-12 col-lg-6">
-                  <p class="text-center"><strong>Peter</strong></p>
-                  <a href="#demo3" data-toggle="collapse">
-                  <img src="/assets/images/pt.jpg" class="img-rounded" alt="Peter Tork" width="300" height="260" style="padding-bottom: 5px">
-                  </a>
-                  <div id="demo3" class="collapse">
-                     <p>Bass Guitar and Vocals</p>
-                  </div>
-               </div>
-               <div class="col-xs-12 col-sm-12 col-lg-6">
-                  <p class="text-center"><strong>Miky</strong></p>
-                  <a href="#demo4" data-toggle="collapse">
-                  <img src="/assets/images/mn.jpg" class="img-rounded" alt="Michael Nesmith" width="300" height="260" style="padding-bottom: 5px">
-                  </a>
-                  <div id="demo4" class="collapse">
-                     <p>Guitarist</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <footer class="container-fluid">
-         <div id="footer-details" class="row">
-            <div class="col-sm-4">
-               <h5 class="uppercase general-sub">Mailing List</h5>
-                  <form class="form-inline">
-                     <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
-                     </div>
-                     <button type="submit" class="btn btn-default">Submit</button>
-                  </form>
-            </div>
-            <div class="col-sm-4">
-               <h5 class="uppercase general-sub">Bookings for Weddings & Parties</h5>
-               <a href="contact.html" class="contact"><i class="" aria-hidden="true"></i>
-               <button type="click here" class="btn btn-default">Click Here!</button></a>  
-            </div>
-            <div class="col-sm-4">
-               <h5 class="uppercase general-sub">Social Media</h5>
-               <ul class="list-inline social-links">
-                  <li><a href="https://www.facebook.com/TheMonkees/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="https://twitter.com/themonkees?lang=en" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="https://www.youtube.com/channel/UCv1oY0OLtsEySHeP1TkYNqA" target="_blank"><i class="fa fa-youtube"></i></a></li>
+            <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav navbar-right">
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="band.html">BAND</a></li>
+                  <li><a href="tour.html">TOUR</a></li>
+                  <li><a href="media.html">MEDIA</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
                </ul>
             </div>
          </div>
-      </footer>
-   </body>
+      </nav>
+   </header>
+   <section>
+      <div id="band" class="container-fluid text-center">
+         <div class="row row-table">
+            <div class="col-xs-12 col-sm-12 col-md-4 bg-color-band-info section-column">
+               <h1 class="section-heading uppercase">The Band</h1>
+               <br>
+               <p="band-info-item">
+                  The Monkees are a four-person band who appear in an American television series of the same name. The Monkees formed in 1965 in Los Angeles, California and even today, still go down as the most successful TV rock show idea ever. That was how they came
+                  about, as an idea for a TV show moulded after the Beatles movie, A Hard Days' Night. A TV show about four poor hippie band members with lots of slapstick comedy, and of course, music too.The group turned into a real band and had a whole
+                  bunch of big hits, world wide!. These hits are heard on radio stations — including 'I'm a Believer', '(I'm Not Your) Steppin' Stone', 'Daydream Believer', 'Last Train to Clarksville' — and even a number of social criticism songs, the
+                  best known of which is probably 'Pleasant Valley Sunday'. The band have produced six albums (four of which went to Number 1 on the Billboard chart), which was supplemented by a series of successful world stadium tours!
+                  </p>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-xs-12 col-sm-12 col-lg-6">
+               <p class="text-center"><strong>Davy</strong></p>
+               <a href="#demo" data-toggle="collapse">
+                  <img src="/assets/images/dj.jpg" class="img-rounded" alt="Davy Jones" width="300" height="255" style="padding-bottom: 5px">
+                  </a>
+               <div id="demo" class="collapse">
+                  <p>Lead Vocals</p>
+               </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-lg-6">
+               <p class="text-center"><strong>Mike</strong></p>
+               <a href="#demo2" data-toggle="collapse">
+                  <img src="/assets/images/md.jpg" class="img-rounded" alt="Mike Dolenz" width="300" height="255" style="padding-bottom: 5px">
+                  </a>
+               <div id="demo2" class="collapse">
+                  <p>Drummer and Vocals</p>
+               </div>
+            </div>
+         </div>
+         <br>
+         <div class="row">
+            <div class="col-xs-12 col-sm-12 col-lg-6">
+               <p class="text-center"><strong>Peter</strong></p>
+               <a href="#demo3" data-toggle="collapse">
+                  <img src="/assets/images/pt.jpg" class="img-rounded" alt="Peter Tork" width="300" height="260" style="padding-bottom: 5px">
+                  </a>
+               <div id="demo3" class="collapse">
+                  <p>Bass Guitar and Vocals</p>
+               </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-lg-6">
+               <p class="text-center"><strong>Miky</strong></p>
+               <a href="#demo4" data-toggle="collapse">
+                  <img src="/assets/images/mn.jpg" class="img-rounded" alt="Michael Nesmith" width="300" height="260" style="padding-bottom: 5px">
+                  </a>
+               <div id="demo4" class="collapse">
+                  <p>Guitarist</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <footer class="container-fluid" style="margin-right: -15px" ;>
+      <div id="footer-details" class="row">
+         <div class="col-sm-4">
+            <h5 class="uppercase general-sub">Mailing List</h5>
+            <form class="form-inline">
+               <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+               </div>
+               <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+         </div>
+         <div class="col-sm-4">
+            <h5 class="uppercase general-sub">Bookings for Weddings & Parties</h5>
+            <a href="contact.html" class="contact"><i class="" aria-hidden="true"></i>
+               <button type="click here" class="btn btn-default">Click Here!</button></a>
+         </div>
+         <div class="col-sm-4">
+            <h5 class="uppercase general-sub">Social Media</h5>
+            <ul class="list-inline social-links">
+               <li><a href="https://www.facebook.com/TheMonkees/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="https://twitter.com/themonkees?lang=en" target="_blank"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="https://www.youtube.com/channel/UCv1oY0OLtsEySHeP1TkYNqA" target="_blank"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+         </div>
+      </div>
+   </footer>
+</body>
 </html>
