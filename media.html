@@ -29,23 +29,19 @@
             font-weight: 700;
         }
 
-        .youtube-responsive-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            padding-top: 30px;
-            height: 0;
-            overflow: hidden;
-        }
-
-        .youtube-responsive-container iframe,
-        .youtube-responsive-container object,
-        .youtube-responsive-container embed {
-            position: absolute;
-            top: 0;
-            left: 0;
+        
+        .video {
             width: 100%;
             height: 100%;
+            
         }
+        
+
+        .youtube-responsive-container {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        
 
         #myBtn {
             display: none;
@@ -107,7 +103,7 @@
                         <span class="icon-bar"></span>                        
                     </button>
                     <a class="navbar-brand" href="index.html">
-                      <img src="/assets/images/logo.png" alt="logo" class="img-responsive" style="max-height: 50px; margin-top: -5%; margin-left: 5%;">
+                      <img src="assets/images/logo.png" alt="logo" class="img-responsive" style="max-height: 50px; margin-top: -5%; margin-left: 5%;">
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
@@ -127,52 +123,57 @@
             <h1 class="page-title">MEDIA</h1>
             <br>
             <div class="row">
+              <div class="col-xs-12">
                 <div class="youtube-responsive-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xvqeSJlgaNk?start=20" frameborder="0" allowfullscreen></iframe>
+                    <video class="video" controls >
+                        <source src="assets/video/themonkees.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                   </video>
                 </div>
+              </div>
             </div><br><br>
             <p><strong>Listen to The Monkees' Greatest Hits!</strong></p>
             <div class="row">
                 <div class="col-sm-12" id="foo">
-                    <img src="/assets/images/tmcover.jpg" class="img-rounded" alt="Band Photo1" style="padding-bottom: 5px;">
+                    <img src="assets/images/tmcover.jpg" class="img-rounded" alt="Band Photo1" style="padding-bottom: 5px;">
                 </div>
             </div>
             <div class="row">
                 <audio controls style="padding-bottom: 1%;">
-          <source src="/assets/audio/Clarksville.mp3" type="audio/mpeg">
+          <source src="assets/audio/Clarksville.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
                 <p><strong>"Clarksville"</strong></p><br>
                 <audio controls style="padding-bottom: 1%;">
-          <source src="/assets/audio/SteppingStone.mp3" type="audio/mpeg">
+          <source src="assets/audio/SteppingStone.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
                 <p><strong>"Stepping Stone"</strong></p><br>
                 <audio controls style="padding-bottom: 1%;">
-          <source src="/assets/audio/ImABeliever.mp3" type="audio/mpeg">
+          <source src="assets/audio/ImABeliever.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
                 <p><strong>"I'm A Believer"</strong></p><br>
                 <audio controls style="padding-bottom: 1%;">
-          <source src="/assets/audio/DayDreambeliever.mp3" type="audio/mpeg">
+          <source src="assets/audio/DayDreambeliever.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
                 <p><strong>"Day Dream Believer"</strong></p><br>
             </div>
             <div class="row">
                 <div class="col-sm-6" id="foo">
-                    <img src="/assets/images/monkees.jpg" class="img-rounded" alt="Band Photo2" style="margin-top: 2%;">
+                    <img src="assets/images/monkees.jpg" class="img-rounded" alt="Band Photo2" style="margin-top: 2%;">
                 </div>
                 <div class="col-sm-6" id="foo">
-                    <img src="/assets/images/tmcover3.jpg" class="img-rounded" alt="Band Photo3" style="margin-top: 2%;">
+                    <img src="assets/images/tmcover3.jpg" class="img-rounded" alt="Band Photo3" style="margin-top: 2%;">
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-6" id="foo">
-                    <img src="/assets/images/monkeeimage.jpg" class="img-rounded" alt="Band Photo4" style="margin-top: 2%;padding-bottom: 10px">
+                    <img src="assets/images/monkeeimage.jpg" class="img-rounded" alt="Band Photo4" style="margin-top: 2%;padding-bottom: 10px">
                 </div>
                 <div class="col-sm-6" id="foo">
-                    <img src="/assets/images/tmband.jpg" class="img-rounded" alt="Band Photo5" style="margin-top: 2%; padding-bottom: 10px">
+                    <img src="assets/images/tmband.jpg" class="img-rounded" alt="Band Photo5" style="margin-top: 2%; padding-bottom: 10px">
                 </div>
             </div>
         </div>
