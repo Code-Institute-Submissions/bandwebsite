@@ -47,7 +47,7 @@ o	The site is fully responsive so that all user groups may use the website.</p>
 •	Clicking the Social Media links in the Footer takes the user to the band’s Social Media pages.<br>
 •	The Monkees logo in the top left-hand corner on every page is clickable. Clicking it takes the user back to the Home page. The cursor changes to pointer on hover.<br>
 •	On the Band page, when you click on a band member’s picture a drop-down toggle appears informing the user what instrument each band member plays.<br>
-•	On the Media page, iFrames allow the user to view a video directly on the page. The iFrame also allows users to select similar videos, play and pause, adjust settings, play full screen and share online.<br>
+•	On the Media page, view a video directly on the page.<br>
 •	Also on the Media page, users are able to enjoy listening to the band’s Greatest Hits on the mp3 players.<br>
 •	On the Tour page, users can click a button to buy tickets to available shows. Clicking the ‘Buy’ button enables a pop up modal where they can type in the amount of tickets they want to buy, enter their email address and then submit.<br>
 •	A back to top button allows users to quickly navigate back to the top of the page for all pages. This is especially useful for mobile and tablet users.</p>
@@ -128,12 +128,12 @@ o	The site is fully responsive so that all user groups may use the website.</p>
 <td></td>
 </tr>
 <tr>
-<td>Featured video playable and has full YouTube Functionality</td>
+<td>Featured video playable and has full functionality</td>
 <td>Successful</td>
 </tr>
 <tr>
-<td>Video highlights play icon on hover</td>
-<td>Successful</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td>Video is responsive to different screen resolutions</td>
