@@ -51,8 +51,8 @@ o	The site is fully responsive so that all user groups may use the website.</p>
 •	Add additional images and create a gallery modal for users to navigate through.<br>
 •	Enable users to play music through different means, such as Spotify and Apple Music. Or have one mp3 music player with the option to select a wide range of tracks to play.</p>
 <h2 id="technologies-used">Technologies Used</h2>
-<p>•	HTML<br>
-•	CSS<br>
+<p>•	<a href="https://en.wikipedia.org/wiki/HTML">HTML</a><br>
+•	<a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</a><br>
 •	Bootstrap 3.3.7 library was used to aid development with its grid system, navigation menu and modals.<br>
 •	Used Font Awesome icons for social media links.<br>
 •	jQuery was used to aid the implementation of Bootstrap (e.g. the hamburger menu) and to assist in the ticketing modal.<br>
@@ -212,15 +212,13 @@ The process for deployment was as follows:<br>
 •	Under GitHub Pages, selected relevant branch (master branch) and saved</p>
 <h2 id="credits">Credits</h2>
 <p>•	Ticket modal is Bootstrap and jQuery<br>
-•	Responsive embedded video help provided by <a href="https://themeskills.com/">https://themeskills.com/</a> - I needed to add in/change part of the code to ?start=20, for the video to start 20 seconds in. This was to cut out a big blank gap at the start of the video.<br>
 •	Carousel was made with the help of <a href="http://www.w3schools.com">www.w3schools.com</a>.<br>
 •	Mp3 players were made with the help of <a href="http://www.w3schools.com">www.w3schools.com</a>.</p>
 <h2 id="media">Media</h2>
-<p>•	Music mp3’s are from the material provided in the milestone project brief.<br>
-•	Video shared from the official YouTube channel of The Monkees (WMG (on behalf of Rhino (Pure)); UBEM, SOLAR Music Rights Management, CMRRA, EMI Music Publishing, and 7 music rights societies.<br>
+<p>•	Video and Music mp3’s are from the material provided in the milestone project brief.<br>
 •	Image content provided by:<br>
 o	Band page background photo is a still from the closing title sequence of the TV series ‘The Monkees’ [Credit: Columbia Pictures Television]<br>
-o	Band pictures from material provided in the milestone project brief.<br>
+o	Band pictures and video from material provided in the milestone project brief.<br>
 o	Tour page, Media page and Contact page background pictures and also the location pictures on Tour page are all ‘free to use images’ from google search.</p>
 <h2 id="disclaimer">Disclaimer</h2>
 <p>This is for educational purposes only.</p>
